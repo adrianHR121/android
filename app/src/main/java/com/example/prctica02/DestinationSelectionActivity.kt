@@ -40,7 +40,7 @@ class DestinationSelectionActivity : AppCompatActivity() {
             navigateToTripRegistration("Japón")
         }
     }
-
+    //Mostrar  un mensaje emergente y pasa datos a la siguiente act
     private fun navigateToTripRegistration(destination: String) {
         Toast.makeText(this, "Seleccionado: $destination", Toast.LENGTH_SHORT).show()
         val intent = Intent(this, TripRegistrationActivity::class.java).apply {
