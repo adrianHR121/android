@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DestinationSelectionActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selecciona tu destino de viaje"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="16dp"/>
+
+            <GridLayout
+                android:id="@+id/gridLayoutDestinations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:rowCount="5"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp">
+
+            <!-- Botón para Playas de México -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Playas de México"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingBottom="8dp"/>
+
+                <ImageButton
+                    android:id="@+id/buttonMexico"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/border_rounded"
+                    android:contentDescription="Playas de México"
+                    android:padding="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/playas_mexico" />
+            </LinearLayout>
+
+            <!-- Botón para Montañas de Canadá -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Montañas de Canadá"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingBottom="8dp"/>
+
+                <ImageButton
+                    android:id="@+id/buttonCanada"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/border_rounded"
+                    android:contentDescription="Montañas de Canadá"
+                    android:padding="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/montanas_canada" />
+            </LinearLayout>
+
+            <!-- Botón para París -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="París"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingBottom="8dp"/>
+
+                <ImageButton
+                    android:id="@+id/buttonParis"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/border_rounded"
+                    android:contentDescription="París"
+                    android:padding="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/paris" />
+            </LinearLayout>
+
+            <!-- Botón para Roma -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Roma"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingBottom="8dp"/>
+
+                <ImageButton
+                    android:id="@+id/buttonRome"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/border_rounded"
+                    android:contentDescription="Roma"
+                    android:padding="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/roma" />
+            </LinearLayout>
+
+            <!-- Botón para Japón -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Japón"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingBottom="8dp"/>
+
+                <ImageButton
+                    android:id="@+id/buttonJapan"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/border_rounded"
+                    android:contentDescription="Japón"
+                    android:padding="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/japon" />
+            </LinearLayout>
+
+        </GridLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TripRegistrationActivity">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingrese los detalles del viaje"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:id="@+id/editTextHotelName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre del hotel" />
+
+        <EditText
+            android:id="@+id/editTextLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ubicación" />
+
+        <EditText
+            android:id="@+id/editTextCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Costo del viaje" />
+
+        <!-- Switches para seleccionar medios de transporte -->
+        <Switch
+            android:id="@+id/switchCar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Coche" />
+
+        <Switch
+            android:id="@+id/switchBus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Autobús" />
+
+        <Switch
+            android:id="@+id/switchPlane"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Avión" />
+
+        <EditText
+            android:id="@+id/editTextCompanions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Número de acompañantes" />
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar" />
+
+        <Button
+            android:id="@+id/buttonShow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Consultar" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

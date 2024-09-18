@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="ExtraText">
+    <solid android:color="#FFFFFF"/> <!-- Fondo blanco para las imágenes -->
+    <corners android:radius="16dp"/> <!-- Radio de los bordes redondeados -->
+    <stroke
+        android:color="#CCCCCC"
+    android:width="2dp"/>
+</shape>
